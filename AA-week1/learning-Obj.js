@@ -1,6 +1,9 @@
 Craft a clear, concise coding question to a more experienced developer
-Research unknown JavaScript code syntax using MDN
-Identify and fix a bug in code based on an error message
+//Research unknown JavaScript code syntax using MDN
+
+
+//Identify and fix a bug in code based on an error message
+// the error message 
 Manage your time and stress at AppAcademyDescribe the properties of a string
 Given a working REPL interface, write and execute a statement that will print “hello world” using console.log
 Identify that strings are a list of characters defined by using double or single quotes
