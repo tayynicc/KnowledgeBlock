@@ -5,8 +5,15 @@ Craft a clear, concise coding question to a more experienced developer
 //Identify and fix a bug in code based on an error message
 // the error message 
 Manage your time and stress at AppAcademyDescribe the properties of a string
-Given a working REPL interface, write and execute a statement that will print “hello world” using console.log
-Identify that strings are a list of characters defined by using double or single quotes
+// Given a working REPL interface, write and execute a statement that will print “hello world” using console.log
+
+    console.log("hello World");
+
+
+//Identify that strings are a list of characters defined by using double or single quotes
+
+    console.log()
+
 Given an arithmetic expression using +, -, *, /, %, compute its value
 Given an expression, predict if its value is NaN
 Construct the truth tables for &&, ||, !
