@@ -3,7 +3,7 @@ Craft a clear, concise coding question to a more experienced developer
 
 
 //Identify and fix a bug in code based on an error message
-// the error message 
+// the error message
 Manage your time and stress at AppAcademyDescribe the properties of a string
 // Given a working REPL interface, write and execute a statement that will print “hello world” using console.log
 
@@ -12,9 +12,10 @@ Manage your time and stress at AppAcademyDescribe the properties of a string
 
 //Identify that strings are a list of characters defined by using double or single quotes
 
-    console.log()
+    console.log("that's a string buck-o")
+    console.log('another string containing speach "The things I do for love" ')
 
-Given an arithmetic expression using +, -, *, /, %, compute its value
+//Given an arithmetic expression using +, -, *, /, %, compute its value
 Given an expression, predict if its value is NaN
 Construct the truth tables for &&, ||, !
 Given an expression consisting of >, >=, ===, <, <=, compute it’s value
@@ -31,9 +32,29 @@ Concatenate two strings together
 Find the first instance of a character in a string
 Create a new string from a sub-section of another string
 
-1.Define a function that accepts a sentence string and two words as args. The function should return a boolean indicating if the sentence includes either word.
+//1.Define a function that accepts a sentence string and two words as args. The function should return a boolean indicating if the sentence includes either word.
+
+    function includes (sentence, word1, word2){
+        if(sentence.includes(word1) || sentence.includes(word2)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    console.log(includes("One does not simpily walk into Mordor.", "walk" , "Smaug"))
+    console.log(includes("fish are friends not food", "Righteous" , "Nigel"))
+
 2.Identify a pair of mutually exclusive conditions.
+
 3.Given a for loop, translate it into a while loop, and vice-versa.
+
+for(let i = 0; i < someValue; i++)
+
+let i = 0;
+while (i < someValue){
+    
+}
 4.Write a function that iterates through a provided string argument.
 5.Given a description of pig latin, write a function that takes in a string argument and utilizes String's slice() method to translate the string into pig latin.
 6.Write a function that takes in an array of words and a string as arguments and returns a boolean indicating whether the string is located inside of the array.
