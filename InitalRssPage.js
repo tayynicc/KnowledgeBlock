@@ -1,0 +1,1 @@
+https://github.com/appacademy/Module-1-Resources/tree/main/week2/d2-pojo
