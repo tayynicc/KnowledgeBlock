@@ -5,3 +5,13 @@
 //or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 
 
+//spread is an operator will break the confiens of its arr 
+
+let arr1 = [1,2,3]
+let arr2 = [4,5,6]
+
+let arr3 = [...arr1 + ...arr2]; 
+
+console.log(arr3) // prints [1,2,3,4,5,6]
+
+
