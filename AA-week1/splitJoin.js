@@ -30,3 +30,4 @@ console.log(newStr); // 'we don't know what we want to eat'
 
 //Whoa! We were able to replace every substring "I" with the substring "we". We know that the line str.split('I').join('we') evaluates from left to right. This means that the split will cut the string wherever there is an 'I',
 // leaving a gap where the 'I's were. Then, the join will fill those gaps with 'we's.
+

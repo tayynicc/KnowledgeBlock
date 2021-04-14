@@ -2,7 +2,7 @@
 
 // dot notation vs bracket notation\
 
-// dot notation is to be used when litterally calling on the string of the key 
+// dot notation is to be used when litterally calling on the string of the key
 //bracket notation can be used to call the litteral string or a variable
 // Dot notation is easier to write as it uses less code and with that makeing it easier to read
 // but when using it you can not use variables as keys
@@ -24,11 +24,11 @@ object.key
 
   console.log(myDog); // prints {name:'Yo-yo' , breed: 'Mutt', color: 'brown', sizelb: 70 , age: 10}
   console.log(myDog.breed) //  Mutt
-  console.log(myDog.color) // Brown 
- 
+  console.log(myDog.color) // Brown
+
 
 //where as bracet notation you can use variables that are assigned to string values.
-// it is also okay to use variables and stienfs tohat star with numbers
+// it is also okay to use variables and start with numbers. you can not call keys that start with numbers with dot notation 
 
 object['1key']
 

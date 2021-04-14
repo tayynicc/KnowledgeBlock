@@ -1,26 +1,31 @@
-//1.Label variables as either Primitive vs. Reference
+//////////////////////////////////////////////////////////1.Label variables as either Primitive vs. Reference
 
-// primitive /////
+//////////////////////////////////////// primitive /////
 // these are immutable data types,
 //strings
 //numbers
 //booleans
 
-// refrence /////
-// there is only one refrence variable and that is
-// object
-
-// object is a data type used to store various keyed collections
+////////////////////////////////////// refrence /////
+//objects
+//arrays are a type of objec so they are also a refrence type.
 
 
-//2.Identify when to use . vs [] when accessing values of an object
+
+
+////////////////////////////////////////////////////////2.Identify when to use . vs [] when accessing values of an object
 
 // dot notation vs bracket notation
-// Dot notation is easier to write as it uses less code and with that makeing it easier to read
-// but when using it you can not use variables as keys
-//and the keays cannot contain numbers as their first character
-// dot notation is used INSIDE the object wheres bracket notation is used to call on the key
 object.key
+    // Dot notation is easier to write as it uses less code and with that makeing it easier to read
+    // but when using it you can not use variables as keys  i.e if you distructure you can not call on that variable with dont notation you must use bracket notation to call that variable.
+    //the keys cannot contain numbers as their first character
+    // dot notation is used INSIDE the object wheres bracket notation is used to call on the key
+
+object["key"]
+    //bracket notation can be used to call the litteral string or a variable
+        //keys are always strings
+    //it is also okay to use variables and start with numbers. you can not call keys that start with numbers with dot notation
 
 //////////5 Examples of Dot Notation ///////////
 
@@ -60,10 +65,10 @@ console.log(myCat);
 // }
 
 
-//3.Use the obj[key] !== undefined pattern to check if a given variable that contains a key exists in an object
+///////////////////////////////////////////3.Use the obj[key] !== undefined pattern to check if a given variable that contains a key exists in an object
 // first what is obj[key] !== undefined saying?
-//if key is in object is not eaqual to undefined then that
-// key value can be found in the object
+//if key is in object is not eaqual to undefined then that key value can be found in the object
+
 
 ////////////5 pratice problems////////////////////
 1.
@@ -171,7 +176,7 @@ console.log(conCat(obj1, "eyeColor")); // eleColor=hazel
 console.log(conCat(obj1, "name", "age")); // name=taylor
 console.log(conCat(obj2, "location"));
 
-//4.Utilize Object.keys and Object.values in a function
+/////////////////////////////////////////////////4.Utilize Object.keys and Object.values in a function
 
 // object.keys iterates throuhgt the object and grabs the keys
 
@@ -182,29 +187,35 @@ height: 6,
 eyeColor: "blue",
 }
 
-let objKeyz = function (){
-return Object.keys(obj2);
-console.log(Object.values(obj2));
+let objKeyz = function (obj , word){
+let keys = Object.keys(obj2)
+let values = Object.values(obj2);
+  if(word === key){
+    return keys;
+  }else if(word === value){
+    return values;
+  }
 }
 
-console.log(objKeyz(obj)); // prints ['name', 'age', 'height', 'eyeColor']
-objKeyz(obj2) // prints "Dillon" , 18 , 6 , "blue"
+console.log(objKeyz(obj, key)); // prints ['name', 'age', 'height', 'eyeColor']
+console.log(objKeyz(obj2, value) // prints "Dillon" , 18 , 6 , "blue"
 
 
-//5.Iterate through an object using a for...in loop
+///////////////////////////////////////////////5.Iterate through an object using a for...in loop
+
 //for...in itterates over all enumerater properties of an object that are keyed by stings.
 
 
 
 let player = {name: "lebron", skill: "basketball"}
 for(let key in player){
-  console.log(key) // name , skill 
-  console.log(player[key]); // Lebron , basketball 
+  console.log(key) // name , skill
+  console.log(player[key]); // Lebron , basketball
 }
 // for (variable in object){
 //  statement
-// the variable name next to let is the variable used to call on keys 
-// like arr[i] so to call on specific key in an object 
+// the variable name next to let is the variable used to call on keys
+// like arr[i] so to call on specific key in an object
 
 //variable
 //A different property name is assigned to variable on each iteration.
@@ -215,6 +226,9 @@ for(let key in player){
 //properties from Object.prototype and String.prototype
 
 // for in loop does not gaurentee that the indexes are itterated over in order
+
+
+
 //6.Define a function that utilizes ...rest syntax to accept an arbitrary number of arguments
 
 function restFunc(...allOtherEle){
@@ -228,11 +242,11 @@ console.log(restFunc(3,3)); //
 console.log(restFunc(5,6,7,8,9)); //
 
 function restSum(...nums){
-  let sum = 0; 
+  let sum = 0;
   nums.forEach(function(num){
-    sum += nums; 
+    sum += nums;
   })
-return sum; 
+return sum;
 }
 
 
@@ -306,12 +320,12 @@ function charCount(arr){
   let res = {};
   arr.forEach(function(el){
     if(res[el] === undefined){
-      res[el] = 1; 
+      res[el] = 1;
     } else(res[el] !== undefined){
       res[el] += 1
     }
   })
-  return res; 
+  return res;
 }
 
 console.log(charCount(arr1))
