@@ -192,11 +192,19 @@ objKeyz(obj2) // prints "Dillon" , 18 , 6 , "blue"
 
 
 //5.Iterate through an object using a for...in loop
-//for...in itterates ocer all enumerater properties of an object that are keyed by stings.
+//for...in itterates over all enumerater properties of an object that are keyed by stings.
 
+
+
+let player = {name: "lebron", skill: "basketball"}
+for(let key in player){
+  console.log(key) // name , skill 
+  console.log(player[key]); // Lebron , basketball 
+}
 // for (variable in object){
 //  statement
-//}
+// the variable name next to let is the variable used to call on keys 
+// like arr[i] so to call on specific key in an object 
 
 //variable
 //A different property name is assigned to variable on each iteration.
@@ -219,14 +227,31 @@ console.log(restFunc(2,3,4,5)); //
 console.log(restFunc(3,3)); //
 console.log(restFunc(5,6,7,8,9)); //
 
+function restSum(...nums){
+  let sum = 0; 
+  nums.forEach(function(num){
+    sum += nums; 
+  })
+return sum; 
+}
+
+
 //7.Use ...spread syntax for Object literals and Array literals
 
 
 
 
 
-
 //8.Destructure an array to reference specific elements
+
+let arr = [one, two, three]
+
+let [first, second, third] = arr
+
+console.log(first); // one
+console.log(second); // two
+console.log(third); // three
+
 
 
 let array = [ ' robot' , ' eletronices', ' iphone' , 'computer'];
@@ -245,17 +270,15 @@ console.log(helper); // undefined
 // to refrence specific values you cn use dot notation or backet notation.
 
 let human = { name: "Jim" , city: "Scranton", job: "Co-Regional Manager"};
-let name, city, job;
-
-({name, city, job} = human);
+let {name , city, job} = human
 
 console.log(job); // Co-Regional Manager
 console.log(city); // Scranton
 console.log(name); // Jim
 
 let employeeNum2 = {name:"Dwight" , location:"classified", milkPrefrence:"Goat"};
-let name, location, milkPrefrence;
-({name, location, milkPrefrence});
+let  {name, }
+;
 
 console.log(location); // classified
 console.log(birthday); // undefined
@@ -279,17 +302,21 @@ console.log(age); // undefined
 let arr1 = ["Michael", "Pam" , "Jim", "Angela"]
 
 
-function people1(arr1){
-let finalObj = {};
-
-arr1.find(letter)
-
+function charCount(arr){
+  let res = {};
+  arr.forEach(function(el){
+    if(res[el] === undefined){
+      res[el] = 1; 
+    } else(res[el] !== undefined){
+      res[el] += 1
+    }
+  })
+  return res; 
 }
 
+console.log(charCount(arr1))
 
 
-
-11.Did you find this lesson helpful?
 
 
 
