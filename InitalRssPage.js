@@ -31,6 +31,7 @@ https://youtu.be/R8rmfD9Y5-c
 .forEach()
 https://youtu.be/159EAISAxwg
 
+
 .Reduce()
 https://youtu.be/NiLUGy1Mh4U
 https://youtu.be/-LFjnY1PEDA
