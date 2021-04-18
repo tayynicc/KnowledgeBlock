@@ -1,33 +1,33 @@
-// key value paired 
+// key value paired
     // key can be used to access the valuse oof " vlaue"
 
-// all key that dont have a value will de assigned undefined 
-// if you access a key that exist it will return the value but if you try to access a key that does not exist it will return undefined 
+// all key that dont have a value will de assigned undefined
+// if you access a key that exist it will return the value but if you try to access a key that does not exist it will return undefined
 
-//objects are unorded list 
-// objects have keys not indeces no order in the keys 
-    
+//objects are unorded list
+// objects have keys not indeces no order in the keys
+
 let obj = {name: "taylor" , age: "3240"}
 
-// objects have values instead of elements 
+// objects have values instead of elements
 
-// key value pairs 
+// key value pairs
 
-// object keys are strings 
-    // to access 
+// object keys are strings
+    // to access
 
 console.log(obj["name"]) // prints "taylor"
-console.log(obj.name) // prints taylor 
+console.log(obj.name) // prints taylor
 
 // if stored in variable like
 
 let thingToCheck = "age"
 console.log(obj[thingToCheck]) // prints 3240
 
-// to call it using variable, do not put in quotes and MUST use bracket notation 
+// to call it using variable, do not put in quotes and MUST use bracket notation
 
-//dont notatin will always look for the sting litteral in the object 
-// to assing a new val into object 
+//dont notatin will always look for the sting litteral in the object
+// to assing a new val into object
 
 obj['keyname'] = "value"
 //or
@@ -40,4 +40,20 @@ if("name" in obj ){
     return true ;
 }
 
-// use objects for instant look up time 
+// use objects for instant look up time
+
+
+let obj = {
+    name:"onyx",
+    type:"cat",
+    status:"sleepy",
+   updateStatus:function(){
+    obj.status = "hungry"
+    return obj
+   }
+ }
+
+ console.log()
+ console.log(obj.updateStatus()) // hungry
+
+ // all this is showing is that functions can also be stored in objects and values and how to invoke that function
