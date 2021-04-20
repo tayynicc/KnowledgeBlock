@@ -212,12 +212,7 @@ pickyMyMap(booleans, (boolean) => !boolean); // [true, true]
 
 
 //////////////////////////////////////////////////////////////////
-// Write a function `duplicateCharMinCount(string, minCount)` that will takes
-// a string as an argument and returns an array of characters that show up
-// at least `minCount` number of times. The string will have at least one
-// character.
-
-
+  
 
 function duplicateCharMinCount(string, minCount) {
     let counter = {};
